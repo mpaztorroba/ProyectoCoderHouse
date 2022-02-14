@@ -1,0 +1,72 @@
+/* Menu */
+.header {
+    background-color: $color-VerdeClaro;
+    height: 80px;
+    .header__logo {
+        float: left;
+        width: 250px;
+        margin: 10px;
+    }
+    .header__NavBar {
+        float: right;
+        ul {
+            list-style: none;
+            font-size: 45px;
+            /* truco por el uso de inline-block*/
+            margin-bottom: 0rem;
+            li {
+                display: inline-block;
+                position: relative;
+                text-decoration: none;
+                font-size: 14px;
+                .MenuItems {
+                    text-decoration: none;
+                    color: $color-VerdeOscuro;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 200;
+                    font-size: 20px;
+                    margin-right: 20px;
+                    &:hover {
+                        text-decoration: none;
+                        color: $color-VerdeOscuro;
+                        border-bottom: 1px solid;
+                        text-align: center;
+                    }
+                }
+                ul {
+                    position: absolute;
+                    display: none;
+                    background-color: $color-VerdeClaro;
+                    border: $color-VerdeOscuro 2px;
+                    width: 75px;
+                    height: 55px;
+                    text-align: center;
+                    border-radius: 8px;
+                    li {
+                        display: block;
+/*NO FUNCIONA EL HOVER DEL MENÚ*/
+                    &:hover ul {
+                        text-decoration: none;
+                        color: #1A6534;
+                        display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Responsive TABLET */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .header__NavBar {
+        display: none;
+    }
+}
+
+/* Responsive MOBILE */
+@media only screen and (max-width: 479px) {
+    .header__NavBar {
+        display: none;
+    }
+}

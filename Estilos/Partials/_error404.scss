@@ -1,0 +1,44 @@
+/* Error 404 */
+.error404 {
+    margin: 180px 120px;
+    z-index: 1;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 45px;
+    padding: 45px;
+    align-items: center;
+    .error404__titulo {
+        text-align: center;
+    }
+    .error404__bajada {
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .error404__boton {
+        background-color: $color-VerdeIntermedio;
+        width: 150px;
+        padding: 12px;
+        border-radius: 77px;
+        margin: 15px;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-style: bold;
+        color: $color-Azul;
+        justify-content: center;
+        &:hover {
+            text-decoration: none;
+            background-color: $color-Azul;
+            color: $color-VerdeIntermedio;
+            transition-duration: 0.5s;
+        }
+    }
+}
+.imgfondo {
+    top: 80px;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    
+}

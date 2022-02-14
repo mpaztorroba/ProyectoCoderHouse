@@ -1,0 +1,43 @@
+/* Footer */
+.footer {
+    background-color: $color-Azul;
+    color: $color-Blanco;
+    font-family: "Roboto", sans-serif;
+    font-weight: 0;
+    padding: 30px;
+    height: 260px;
+    .footer__logo {
+        float: right;
+        width: 230px;
+        opacity: 30%;
+        }
+    .footer__secciones {
+        .SeccionFooter {
+            text-decoration: none;
+            color: $color-Blanco;
+            font-weight: 200;
+            line-height: 25px;
+            &:hover {
+                text-decoration: none;
+                color: $color-Blanco;
+                border-bottom: 1px solid;
+                }
+            }
+        }
+    .footer__redes {
+        margin-top: 30px;
+        .BotonesRedes {
+            margin: 10px;
+            }
+        }
+    }
+
+
+/* Responsive MOBILE */
+@media only screen and (max-width: 479px) {
+    .footer__logo {
+        float: right;
+        width: 160px;
+        opacity: 30%;
+    }
+}

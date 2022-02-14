@@ -1,0 +1,309 @@
+/* Hero */
+.Hero {
+    background-color: $color-VerdeClaro;
+    height: max-content;
+    width: 100%;
+    .HeroGrid {
+        padding: 0px 120px 30px 120px;
+        max-width: none;
+        .hero__titular span {
+            animation-name: titilar;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .hero__bajada {
+            margin: 25px 0px 40px 0px;
+        }
+        .hero__botones {
+            .BotonDescargar {
+                background-color: $color-VerdeIntermedio;
+                width: 120px;
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 77px;
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-style: bold;
+                color: $color-Azul;
+                &:hover {
+                    text-decoration: none;
+                    background-color: $color-Azul;
+                    color: $color-VerdeIntermedio;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+            .BotonMasInfo {
+                width: 100px;
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-style: bold;
+                color: $color-Azul;
+                img {
+                    width: 26px;
+                    padding: 5px;
+                }
+                &:Hover {
+                    text-decoration: none;
+                    color: $color-Azul;
+                    border-bottom: 1px solid;
+                    img {
+                        text-decoration: none;
+                        transform: translate(20px, 0px);
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+        .hero__img {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+@keyframes titilar {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.TituloSecundario {
+    padding: 70px 120px;
+}
+
+/* Secciones Index */
+
+.SeccionBeneficios {
+    margin-top: 20px 0px;
+    padding: 0px 120px;
+    max-width: none;
+}
+
+.SeccionObjetivo {
+    margin: 40px 0px;
+    padding: 0px 120px;
+    flex-flow: row-reverse;
+    max-width: none;
+}
+
+.Caja1 img {
+    width: 100%;
+    min-height: 250px;
+    border-radius: 40px;
+}
+
+.Caja2 {
+    margin-top: 8px;
+    padding: 20px;
+    color: $color-Azul;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/* Sección Testimonios */
+.testimonios {
+    background-image: linear-gradient(360deg, #F8FED1 0%, rgba(248, 254, 209, 0) 91.73%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: fit-content;
+    min-height: 600px;
+    max-height: 6000px;
+    .testimonios__titulo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonios__cards {
+        margin: 40px 120px 0px 120px;
+        justify-items: stretch;
+        .card {
+            margin-bottom: 30px;
+            border-radius: 25px;
+            box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.05);
+            img {
+                margin-top: 16px;
+                border-radius: 22px;
+            }
+            .card-body {
+                font-family: Filson Pro;
+                color: $color-Azul;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+            .Nombre {
+                padding-left: 20px;
+            }
+            .Profesion {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: $color-VerdeClaro;
+    padding: 0px 120px 100px 120px;
+    text-align: center;
+    .card {
+        width: 60%;
+        height: fit-content;
+        border-radius: 25px;
+        padding: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.05);
+        .newsletter__titulo {
+            line-height: 60px;
+            align-self: center;
+        }
+        .newsletter__bajada {
+            margin: 40px 0px;
+            align-self: center;
+        }
+    }
+}
+
+
+
+/* Responsive TABLET */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .HeroGrid {
+        flex-flow: column-reverse;
+        .hero__titular {
+            margin-top: 20px;
+            text-align: center;
+            align-self: center;
+        }
+        .hero__bajada {
+            text-align: center;
+        }
+        .hero__botones {
+            justify-content: center;
+        }
+    }
+    .TituloSecundario {
+        font-size: 40px;
+        line-height: 57px;
+        padding: 50px 60px;
+    }
+    .SeccionBeneficios {
+        padding: 0px 60px;
+    }
+    .SeccionObjetivo {
+        flex-flow: row-reverse wrap;
+        padding: 0px 60px;
+    }
+
+    .Testimonios {
+        height: 550px;
+        .testimonios__cards {
+            margin: 40px 60px 0px 60px;
+            flex-flow: row;
+            .card {
+                border-radius: 25px;
+            }
+        }
+    }
+    
+    .newsletter {
+        padding: 30px 60px 100px 60px;
+        .card {
+            width: 100%;
+            .newsletter__titulo {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            .newsletter__bajada {
+                font-size: 22px;
+                line-height: 32px;
+                margin: 30px 0px;
+            }
+        }
+    }
+}
+
+
+/* Responsive MOBILE */
+@media only screen and (max-width: 479px) {
+
+    .HeroGrid {
+        flex-flow: column-reverse;
+        .hero__titular {
+            font-size: 40px;
+            line-height: 50px;
+            margin-top: 20px;
+            text-align: center;
+            align-self: center;
+        }
+        .hero__bajada {
+            display: none;
+        }
+        .hero__botones {
+            justify-content: center;
+        }
+    }
+    .TituloSecundario {
+        margin: 0px;
+        padding: 40px 30px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .SeccionBeneficios {
+        padding: 0px 30px;
+    }
+    .SeccionObjetivo {
+        flex-flow: row-reverse wrap;
+        padding: 0px 30px;
+    }
+
+    .Testimonios {
+        height: 550px;
+        padding: 0px 30px;
+        .testimonios__cards {
+            margin: 40px 30px 0px 30px;
+            flex-flow: row;
+            .card {
+                border-radius: 25px;
+            }
+        }
+    }
+
+    .newsletter {
+        padding: 50px 30px 100px 30px;
+        .card {
+            width: 100%;
+            .newsletter__titulo {
+                font-size: 35px;
+                line-height: 40px;
+            }
+            .newsletter__bajada {
+                font-size: 18px;
+                line-height: 27px;
+                margin: 25px 0px;
+            }
+        }
+    }
+}
