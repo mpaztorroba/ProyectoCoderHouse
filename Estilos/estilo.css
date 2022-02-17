@@ -720,37 +720,37 @@
 }
 
 .laApp__categorias .Contenedor .img1 {
-  background-image: url(../multimedia/app-categorias-energia.jpg);
+  background-image: url(../Multimedia/app-categorias-energia.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .laApp__categorias .Contenedor .img2 {
-  background-image: url(../multimedia/app-categorias-airelibre.png);
+  background-image: url(../Multimedia/app-categorias-airelibre.png);
   background-size: cover;
   background-position: center;
 }
 
 .laApp__categorias .Contenedor .img3 {
-  background-image: url(../multimedia/app-categorias-transporte.jpg);
+  background-image: url(../Multimedia/app-categorias-transporte.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .laApp__categorias .Contenedor .img4 {
-  background-image: url(../multimedia/app-categorias-compras.jpg);
+  background-image: url(../Multimedia/app-categorias-compras.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
 .laApp__categorias .Contenedor .img5 {
-  background-image: url(../multimedia/app-categorias-higiene.jpg);
+  background-image: url(../Multimedia/app-categorias-higiene.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .laApp__categorias .Contenedor .img6 {
-  background-image: url(../multimedia/app-categorias-residuos.jpg);
+  background-image: url(../Multimedia/app-categorias-residuos.jpg);
   background-size: cover;
   background-position: center;
 }
