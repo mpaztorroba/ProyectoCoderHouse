@@ -3,6 +3,7 @@
     background-color: $color-VerdeClaro;
     height: max-content;
     width: 100%;
+    padding-top:100px;
     .HeroGrid {
         padding: 0px 120px 30px 120px;
         max-width: none;
@@ -38,31 +39,31 @@
                 }
             }
         }
-            .BotonMasInfo {
-                width: 100px;
-                margin: 15px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        .BotonMasInfo {
+            width: 100px;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-style: bold;
+            color: $color-Azul;
+            img {
+                width: 26px;
+                padding: 5px;
+            }
+            &:Hover {
                 text-decoration: none;
-                font-family: "Roboto", sans-serif;
-                font-style: bold;
                 color: $color-Azul;
+                border-bottom: 1px solid;
                 img {
-                    width: 26px;
-                    padding: 5px;
-                }
-                &:Hover {
                     text-decoration: none;
-                    color: $color-Azul;
-                    border-bottom: 1px solid;
-                    img {
-                        text-decoration: none;
-                        transform: translate(20px, 0px);
-                        transition-duration: 0.5s;
-                    }
+                    transform: translate(20px, 0px);
+                    transition-duration: 0.5s;
                 }
             }
+        }
         .hero__img {
             background-repeat: no-repeat;
             background-size: cover;
@@ -135,6 +136,7 @@
         justify-items: stretch;
         .card {
             margin-bottom: 30px;
+            padding-bottom: 20px;
             border-radius: 25px;
             box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.05);
             img {
@@ -150,7 +152,7 @@
                 line-height: 20px;
                 margin-top: 10px;
             }
-            .Nombre .Profesion {
+            .Nombre, .Profesion {
                 padding-left: 20px;
             }
         }
@@ -183,28 +185,32 @@
 }
 
 
-
 /* Responsive TABLET */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-    .HeroGrid {
-        flex-flow: column-reverse;
-        .hero__titular {
-            margin-top: 20px;
-            text-align: center;
-            align-self: center;
-        }
-        .hero__bajada {
-            text-align: center;
-        }
-        .hero__botones {
-            justify-content: center;
+@media (min-width: 577px) and (max-width: 991px) {
+    .Hero {
+        .HeroGrid {
+            padding: 0px 0px 30px 0px;
+            flex-flow: column-reverse;
+            .hero__titular {
+                margin-top: 20px;
+                text-align: center;
+                align-self: center;
+                font-size: 50px;
+                line-height: 60px;
+            }
+            .hero__bajada {
+                text-align: center;
+            }
+            .hero__botones {
+                justify-content: center;
+            }
         }
     }
     .TituloSecundario {
         font-size: 40px;
         line-height: 57px;
-        padding: 50px 60px;
+        padding-top: 50px;
     }
     .SeccionBeneficios {
         padding: 0px 60px;
@@ -215,9 +221,10 @@
     }
 
     .Testimonios {
+        margin: 40px 60px 0px 60px;
         height: 550px;
+        width: 100%;
         .testimonios__cards {
-            margin: 40px 60px 0px 60px;
             flex-flow: row;
             .card {
                 border-radius: 25px;
@@ -229,9 +236,10 @@
         padding: 30px 60px 100px 60px;
         .card {
             width: 100%;
+            max-width: none;
             .newsletter__titulo {
-                font-size: 45px;
-                line-height: 50px;
+                font-size: 40px;
+                line-height: 57px;
             }
             .newsletter__bajada {
                 font-size: 22px;
@@ -244,22 +252,26 @@
 
 
 /* Responsive MOBILE */
-@media only screen and (max-width: 479px) {
 
-    .HeroGrid {
-        flex-flow: column-reverse;
-        .hero__titular {
-            font-size: 40px;
-            line-height: 50px;
-            margin-top: 20px;
-            text-align: center;
-            align-self: center;
-        }
-        .hero__bajada {
-            display: none;
-        }
-        .hero__botones {
-            justify-content: center;
+@media (max-width: 576px) {
+    .Hero {
+        .HeroGrid {
+            flex-flow: column-reverse;
+            padding: 0px 30px 30px 30px;
+            max-width: none;
+            .hero__titular {
+                font-size: 30px;
+                line-height: 40px;
+                margin-top: 20px;
+                text-align: center;
+                align-self: center;
+            }
+            .hero__bajada {
+                display: none;
+            }
+            .hero__botones {
+                justify-content: center;
+            }
         }
     }
     .TituloSecundario {
@@ -279,11 +291,14 @@
     .Testimonios {
         height: 550px;
         padding: 0px 30px;
-        .testimonios__cards {
+        .container {
             margin: 40px 30px 0px 30px;
-            flex-flow: row;
-            .card {
-                border-radius: 25px;
+            .testimonios__cards {
+                flex-flow: row;
+                .card {
+                    border-radius: 25px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -293,12 +308,12 @@
         .card {
             width: 100%;
             .newsletter__titulo {
-                font-size: 35px;
-                line-height: 40px;
+                font-size: 25px;
+                line-height: 35px;
             }
             .newsletter__bajada {
-                font-size: 18px;
-                line-height: 27px;
+                font-size: 15px;
+                line-height: 25px;
                 margin: 25px 0px;
             }
         }

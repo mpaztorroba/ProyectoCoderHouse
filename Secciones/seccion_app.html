@@ -10,24 +10,30 @@
     <meta name="keywords" content="ecología, medio ambiente, planeta, impacto ambiental, eco, ciudad verde, hábitos, app, tecnología, cuidados, ayuda, características, pasos, categorías">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"> <img src="../Multimedia/logo-2.png" class="header__logo" alt="Logo GreenHabit"> </a>
-        <nav class="header__NavBar">
-            <ul>
-                <li><a href="seccion_sobrenosotros.html" class="MenuItems">Sobre nosotros</a></li>
-                <li><a href="seccion_app.html" class="MenuItems">La app</a></li>
-                <li><a href="sección_descargar.html" class="MenuItems">Descargar</a>
-                    <ul>
-                        <li><a href="https://play.google.com/store?hl=es_AR&gl=US" class="MenuItems">Android</a></li>
-                        <li><a href="https://www.apple.com/app-store/" class="MenuItems">iOs</a></li>
-                    </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"> <img src="../Multimedia/logo-2.png" class="navbar__logo" alt="Logo GreenHabit"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="seccion_sobrenosotros.html">Sobre nosotros</a>
                 </li>
-                <li><a href="seccion_contactanos.html" class="MenuItems">Contactanos</a></li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="seccion_app.html">La App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sección_descargar.html">Descargar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seccion_contactanos.html">Contactanos</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <section class="laApp">
-        <h1 class="laApp__titulo"> Descubrí como cambiar tus hábitos ayuda a reducir la contaminación y optimizar recursos.</h1>
+        <h1 class="laApp__titulo"> Descubrí como cambiar tus hábitos ayuda a reducir la contaminación y a optimizar recursos.</h1>
         <img src="../Multimedia/app-flechacirc.png">
     </section>
     <section class="laApp__pasos">
@@ -58,16 +64,16 @@
         <h3> Categorías de objetivos </h3>
         <div class="Contenedor container">
             <div class="row">
-                <div class="img img1 col-xs-12 col-sm-6 col-md-4 col-lg-4">Energía</div>
-                <div class="img img2 col-xs-12 col-sm-6 col-md-8 col-lg-8">Aire libre</div>
+                <div class="img img1 col-xs-11 col-sm-6 col-md-4 col-lg-4"> <p> Energía </p> </div>
+                <div class="img img2 col-xs-11 col-sm-6 col-md-8 col-lg-8"> <p> Aire libre </p> </div>
             </div>
             <div class="row">
-                <div class="img img3 col-xs-12 col-sm-6 col-md-8 col-lg-8">Transporte</div>
-                <div class="img img4 col-xs-12 col-sm-6 col-md-4 col-lg-4">Compras</div>
+                <div class="img img3 col-xs-11 col-sm-6 col-md-8 col-lg-8"> <p> Transporte</p> </div>
+                <div class="img img4 col-xs-11 col-sm-6 col-md-4 col-lg-4"> <p> Compras</p> </div>
             </div>
             <div class="row">
-                <div class="img img5 col-xs-12 col-sm-6 col-md-4 col-lg-4">Higiene</div>
-                <div class="img img6 col-xs-12 col-sm-6 col-md-4 col-lg-4">Residuos</div>
+                <div class="img img5 col-xs-11 col-sm-6 col-md-4 col-lg-4"> <p> Higiene </p> </div>
+                <div class="img img6 col-xs-11 col-sm-6 col-md-8 col-lg-8"> <p> Residuos </p> </div>
             </div>
         </div>
     </section>

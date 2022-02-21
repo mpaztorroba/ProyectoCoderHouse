@@ -10,22 +10,28 @@
     <meta name="keywords" content="ecología, medio ambiente, planeta, impacto ambiental, eco, ciudad verde, hábitos, app, tecnología, cuidados, equipo, personas, staff, profesionales">
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"> <img src="../Multimedia/logo-2.png" class="header__logo" alt="Logo GreenHabit"> </a>
-        <nav class="header__NavBar">
-            <ul>
-                <li><a href="seccion_sobrenosotros.html" class="MenuItems">Sobre nosotros</a></li>
-                <li><a href="seccion_app.html" class="MenuItems">La app</a></li>
-                <li><a href="sección_descargar.html" class="MenuItems">Descargar</a>
-                    <ul>
-                        <li><a href="https://play.google.com/store?hl=es_AR&gl=US" class="MenuItems">Android</a></li>
-                        <li><a href="https://www.apple.com/app-store/" class="MenuItems">iOs</a></li>
-                    </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"> <img src="../Multimedia/logo-2.png" class="navbar__logo" alt="Logo GreenHabit"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="seccion_sobrenosotros.html">Sobre nosotros</a>
                 </li>
-                <li><a href="seccion_contactanos.html" class="MenuItems">Contactanos</a></li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="seccion_app.html">La App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sección_descargar.html">Descargar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seccion_contactanos.html">Contactanos</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <section class="Carrousel"> 
         <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -63,8 +69,8 @@
             </a>     
         </div>
     </section>
-    <h2> Somos una organización que cree en que el cambio sólo es posible si es colectivo, por eso nos motiva inspirar a otros.</h2>
     <section class="staff">
+        <h2> Somos una organización que cree en que el cambio sólo es posible si es colectivo, por eso nos motiva inspirar a otros.</h2>
         <div class="staff__miembro miembro1">
             <img src="../Multimedia/sobrenosotros-equipo-1.png" alt="Avatar miembro 1" class="FotoRedonda" >
             <p class="Nombre">Martin Aguero</p>
@@ -101,7 +107,7 @@
         <div class="footer__secciones">
             <h6> Secciones </h6>
             <ul type="none">
-                <li> <a href="seccion_sobrenosotros.html" class="SeccionesFooter"> Sobre nosotros </a> </li>
+                <li> <a href="seccion_sobrenosotros.html" class="SeccionesFooter text-decoration-none"> Sobre nosotros </a> </li>
                 <li> <a href="seccion_app.html" class="SeccionesFooter"> La app </a> </li>
                 <li> <a href="sección_descargar.html" class="SeccionesFooter"> Descargar </a></li>
                 <li> <a href="seccion_contactanos.html" class="SeccionesFooter"> Contactanos </a> </li>

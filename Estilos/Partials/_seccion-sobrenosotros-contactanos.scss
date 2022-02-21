@@ -1,5 +1,6 @@
 /* Sobre Nosotros */
 .Carrousel {
+    padding-top:100px;
     margin-top: 0px;
     width: 100%;
     margin-bottom: 50px;
@@ -13,18 +14,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 70px;
+    margin: 0px 170px 70px 170px;
     .staff__miembro {        
-        margin: 0px 120px 20px 120px;
+        margin: 30px 60px 20px 60px;
         img {
             text-align: center;
         }
         .FotoRedonda {
-            width: 250px;
+            width: 180px;
             margin: 25px;
             border: 5px solid $color-VerdeIntermedio;
             box-sizing: border-box;
             border-radius: 177px;
+        }
+        .Nombre, .Profesion {
+            text-align: center;
         }
     }
 }
@@ -33,6 +37,7 @@
 
 /* Contactanos */
 .contacto {
+    padding-top:100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -52,20 +57,88 @@
         fieldset {
             font-family: "Roboto", sans-serif;
             color: #00055C;
-            margin: 30px;
+            margin-left: 30px;
             padding: 15px;
-            input {
+            input, select, .form-check, button {
                 margin-bottom: 15px;
             }
-            select {
-                margin-bottom: 15px;
-            }
-            .form-check {
-                margin-bottom: 15px;
-            }
-            button {
-                margin-bottom: 15px;
+        }
+    }
+}
 
+
+
+
+/* Responsive TABLET */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .staff {
+        margin: 0px 60px 70px 60px;
+        h2 {
+            font-size: 40px;
+            line-height: 57px;
+        }
+    }
+
+    .contacto {
+        margin: 60px 60px;
+        .contacto__titulares {
+            text-align: center;
+            width: 100%;
+        }
+        .contacto__form {
+            width: 100%;
+            fieldset {
+                margin-left: 0px;
+                }
+            }
+        }
+}
+
+
+
+/* Responsive MOBILE */
+
+@media (max-width: 576px) {
+
+    .Carrousel {
+        .carousel-inner img {
+            height: 300px;
+            width: auto;
+            background-position: center;
+        }
+    }
+    .staff {
+        margin: 0px 30px 70px 30px;
+        h2 {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .staff__miembro { 
+            .FotoRedonda {
+                width: 120px;
+            }
+        }
+    }
+
+    .contacto {
+        margin: 30px 30px;
+        .contacto__titulares {
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .contacto__form {
+            width: 100%;
+            fieldset {
+                margin-left: 0px;
+                input, select, .form-check, button {
+                    margin-bottom: 25px;
+                }
             }
         }
     }
