@@ -1,3 +1,11 @@
+/* COLORES */
+$color-VerdeOscuro: #1A6534;
+$color-VerdeIntermedio: #CDDC6D;
+$color-VerdeClaro: #f7ffcc;
+$color-Azul: #00055C;
+$color-Blanco: #ffffff;
+
+
 /* Menu */
 .navbar {
     background-color: $color-VerdeClaro;
@@ -29,6 +37,11 @@
                     text-align: right;
                     }
                 }
+            .active {
+                text-decoration: none;
+                color: $color-VerdeOscuro;
+                font-weight: 600;
+            }
         }
     }
 }

@@ -87,22 +87,23 @@
 /* Secciones Index */
 
 .SeccionBeneficios {
-    margin-top: 20px 0px;
+    margin-top: 20px;
     padding: 0px 120px;
-    max-width: none;
+    justify-content: center !important;
 }
 
 .SeccionObjetivo {
     margin: 40px 0px;
     padding: 0px 120px;
     flex-flow: row-reverse;
-    max-width: none;
+    justify-content: center !important;  
 }
 
 .Caja1 img {
     width: 100%;
     min-height: 250px;
     border-radius: 40px;
+    object-fit: cover;
 }
 
 .Caja2 {
@@ -131,29 +132,29 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .testimonios__cards {
-        margin: 40px 120px 0px 120px;
-        justify-items: stretch;
-        .card {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-radius: 25px;
-            box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.05);
-            img {
-                margin-top: 16px;
-                border-radius: 22px;
-            }
-            .card-body {
-                font-family: Filson Pro;
-                color: $color-Azul;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 17px;
-                line-height: 20px;
-                margin-top: 10px;
-            }
-            .Nombre, .Profesion {
-                padding-left: 20px;
+    .container{
+        .testimonios__cards {
+            margin: 40px 30px 0px 30px;
+            justify-items: stretch;
+            .card {
+                margin-bottom: 30px;
+                padding-bottom: 20px;
+                border-radius: 25px;
+                box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.05);
+                img {
+                    margin-top: 16px;
+                    border-radius: 22px;
+                }
+                .card-body {
+                    font-family: Filson Pro;
+                    color: $color-Azul;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 22px;
+                    margin-top: 10px;
+                    padding-left: 0px;
+                }
             }
         }
     }
@@ -219,15 +220,17 @@
         flex-flow: row-reverse wrap;
         padding: 0px 60px;
     }
-
     .Testimonios {
-        margin: 40px 60px 0px 60px;
         height: 550px;
         width: 100%;
-        .testimonios__cards {
-            flex-flow: row;
-            .card {
-                border-radius: 25px;
+        .container {
+            max-width: 600px;
+            .testimonios__cards {
+                margin: 40px 60px 0px 60px;
+                flex-flow: row;
+                .card {
+                    border-radius: 25px;
+                }
             }
         }
     }
@@ -249,6 +252,16 @@
         }
     }
 }
+
+
+
+/* Responsive TABLET Ajuste Testimonios */
+
+@media (min-width: 768px){
+    .container, .container-md, .container-sm {
+        max-width: none;
+        }
+    }
 
 
 /* Responsive MOBILE */
@@ -298,6 +311,13 @@
                 .card {
                     border-radius: 25px;
                     margin-bottom: 20px;
+                    .card-body {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .Nombre, .Profesion {
+                        font-size: 16px;
+                    }
                 }
             }
         }

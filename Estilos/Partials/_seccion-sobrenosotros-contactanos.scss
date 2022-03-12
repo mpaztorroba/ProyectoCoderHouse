@@ -63,6 +63,44 @@
                 margin-bottom: 15px;
             }
         }
+        .BotonesForm {
+            .BotonEnviar {
+                background-color: $color-VerdeIntermedio;
+                width: 120px;
+                margin: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 77px;
+                text-decoration: none;
+                font-family: "Roboto", sans-serif;
+                font-style: bold;
+                color: $color-Azul;
+                &:hover {
+                    text-decoration: none;
+                    background-color: $color-Azul;
+                    color: $color-VerdeIntermedio;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+        .BotonBorrar {
+            width: 100px;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-style: bold;
+            color: $color-Azul;
+            &:Hover {
+                text-decoration: none;
+                color: $color-Azul;
+                border-bottom: 1px solid;
+            }
+        }
     }
 }
 

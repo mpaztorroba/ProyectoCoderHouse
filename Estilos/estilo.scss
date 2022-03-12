@@ -1,5 +1,4 @@
-@import "./partials/variables";
-@import "./partials/menu-footer";
+@import "./partials/variables-menu-footer";
 @import "./partials/index";
 @import "./partials/seccion-sobrenosotros-contactanos";
 @import "./partials/seccion-app-descargar";
@@ -91,7 +90,6 @@ h6 {
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
-
     margin-bottom: 0px;
 }
 .Profesion {

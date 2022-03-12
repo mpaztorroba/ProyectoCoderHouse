@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../Estilos/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="description" content="Aprendé cómo utilizar la app GreenHabit y como te ayudará a cuidar el planeta mejorando tus hábitos.">
     <meta name="keywords" content="ecología, medio ambiente, planeta, impacto ambiental, eco, ciudad verde, hábitos, app, tecnología, cuidados, ayuda, características, pasos, categorías">
 </head>
@@ -18,10 +19,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="seccion_sobrenosotros.html">Sobre nosotros</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="seccion_app.html">La App</a>
+                    <a class="nav-link active" href="seccion_app.html">La App</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="sección_descargar.html">Descargar</a>
@@ -39,21 +43,21 @@
     <section class="laApp__pasos">
         <h3> Pasos </h3>
         <div class="Pasos Paso1">
-            <img src="../Multimedia/app-pasos1.png" class="PasosImg">
+            <img src="../Multimedia/app-pasos1.png" class="PasosImg animate__animated animate__fadeInLeft">
             <div class="PasosTxt">
                 <p class="NumeroPasos"> 1 </p>
                 <h5>Fijar objetivos para construir nuevos hábitos ecológicos. </h5>
             </div>
         </div>
         <div class="Pasos Paso2">
-            <img src="../Multimedia/app-pasos2.png" class="PasosImg">
+            <img src="../Multimedia/app-pasos2.png" class="PasosImg animate__animated animate__fadeInRight">
             <div class="PasosTxt">
                 <p class="NumeroPasos"> 2 </p>
                 <h5>Repetir las acciones indicadas hasta convertirlas en rutina. </h5>
             </div>
         </div>
         <div class="Pasos" class="Paso3">
-            <img src="../Multimedia/app-pasos3.png" class="PasosImg">
+            <img src="../Multimedia/app-pasos3.png" class="PasosImg animate__animated animate__fadeInLeft">
             <div class="PasosTxt">
                 <p class="NumeroPasos"> 3 </p>
                 <h5>Una vez logrado el objetivo, fijar nuevos hábitos para continuar mejorando. </h5>
@@ -62,19 +66,18 @@
     </section>
     <section class="laApp__categorias" >
         <h3> Categorías de objetivos </h3>
-        <div class="Contenedor container">
-            <div class="row">
-                <div class="img img1 col-xs-11 col-sm-6 col-md-4 col-lg-4"> <p> Energía </p> </div>
-                <div class="img img2 col-xs-11 col-sm-6 col-md-8 col-lg-8"> <p> Aire libre </p> </div>
+        <div class="Contenedor container animate__animated animate__fadeInUp">
+            <div class="row card-columns justify-content-center">
+                <div class="img img1 col-xs-12 col-sm-5 col-md-5 col-lg-4"> <p> Energía </p> </div>
+                <div class="img img2 col-xs-12 col-sm-5 col-md-5 col-lg-7"> <p> Aire libre </p> </div>
             </div>
-            <div class="row">
-                <div class="img img3 col-xs-11 col-sm-6 col-md-8 col-lg-8"> <p> Transporte</p> </div>
-                <div class="img img4 col-xs-11 col-sm-6 col-md-4 col-lg-4"> <p> Compras</p> </div>
+            <div class="row card-columns justify-content-center">
+                <div class="img img3 col-xs-11 col-sm-5 col-md-5 col-lg-7"> <p> Transporte</p> </div>
+                <div class="img img4 col-xs-11 col-sm-5 col-md-5 col-lg-4"> <p> Compras</p> </div>
             </div>
-            <div class="row">
-                <div class="img img5 col-xs-11 col-sm-6 col-md-4 col-lg-4"> <p> Higiene </p> </div>
-                <div class="img img6 col-xs-11 col-sm-6 col-md-8 col-lg-8"> <p> Residuos </p> </div>
-            </div>
+            <div class="row card-columns justify-content-center">
+                <div class="img img5 col-xs-11 col-sm-5 col-md-5 col-lg-4"> <p> Higiene </p> </div>
+                <div class="img img6 col-xs-11 col-sm-5 col-md-5 col-lg-7"> <p> Residuos </p> </div>
         </div>
     </section>
     <section class="laApp__descargar" >
@@ -89,10 +92,11 @@
         <div class="footer__secciones">
             <h6> Secciones </h6>
             <ul type="none">
-                <li> <a href="seccion_sobrenosotros.html" class="SeccionesFooter"> Sobre nosotros </a> </li>
-                <li> <a href="seccion_app.html" class="SeccionesFooter"> La app </a> </li>
-                <li> <a href="sección_descargar.html" class="SeccionesFooter"> Descargar </a></li>
-                <li> <a href="seccion_contactanos.html" class="SeccionesFooter"> Contactanos </a> </li>
+                <li> <a href="../index.html" class="SeccionFooter"> Inicio </a> </li>
+                <li> <a href="seccion_sobrenosotros.html" class="SeccionFooter"> Sobre nosotros </a> </li>
+                <li> <a href="seccion_app.html" class="SeccionFooter"> La app </a> </li>
+                <li> <a href="sección_descargar.html" class="SeccionFooter"> Descargar </a></li>
+                <li> <a href="seccion_contactanos.html" class="SeccionFooter"> Contactanos </a> </li>
             </ul>
         </div>
         <div class="footer__redes">

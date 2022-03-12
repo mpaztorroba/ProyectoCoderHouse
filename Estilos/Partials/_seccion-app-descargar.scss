@@ -69,28 +69,34 @@
         margin-right: auto;
     }
     .Contenedor {
-        margin: 40px 100px;
+        display: block;
+        margin: 60px auto;
         height: 100%;
         .row {
-            width: 80%;
-            align-self: center;
+            margin-bottom: 20px;
             .img {
                 border: 2px solid $color-VerdeIntermedio;
                 border-radius: 25px;
-                color: $color-Azul;
+                height: 200px;
+                p {
+                color: $color-Blanco;
+                background-color: $color-Azul;
                 font-family: Roboto;
                 font-size: 22px;
-                line-height: 200px;
                 text-align: center;
-                p {
-                    visibility: hidden;
+                margin-top: 90px;
                 }
-                &:hover {
+                @media all and (min-width: 900px) {
+                    p {
+                        visibility: hidden;
+                    }
+                    &:hover {
                     opacity: 50%;
                     transition-duration: 0.5s;
                     transform: scale(105%);
                     p {
-                    visibility: visible;
+                        visibility: visible;
+                        }
                     }
                 }
             }
@@ -210,7 +216,11 @@
     }
     .laApp__categorias {
         .Contenedor {
-            margin: 40px 50px;
+            display: block;
+            margin: 60px auto;
+                p {
+                    margin-top: 40px;
+                }
         }
     }
     .laApp__descargar {
@@ -256,7 +266,14 @@
     }
     .laApp__pasos { 
         .Pasos {
+            margin: 60px 30px;
+            .PasosImg {
+                width: 80%;
+                min-width: 100px;
+            }
             .PasosTxt {
+                width: 70%;
+                min-width: 100px;
                 h5 {
                     margin-top: 25px;
                     font-size: 18px;
@@ -267,7 +284,15 @@
     }
     .laApp__categorias {
         .Contenedor {
-            margin: 40px 20px;
+            display: block;
+            margin: 30px auto;
+            width: 80%;
+            .img1, .img3, .img5 {
+                margin-bottom: 20px;
+            }
+            p {
+                margin-top: 40px;
+            }
         }
     }
     .laApp__descargar {
